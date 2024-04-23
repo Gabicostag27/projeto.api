@@ -7,3 +7,51 @@ passo 2: Execute o instalador, depois que o download estiver completo, execute o
 passo 3: Clique em "Install Now", clique no botão "Install Now" para iniciar a instalação. Aguarde a instalação, o instalador do Python agora instalará o Python no seu sistema. Isso pode levar alguns minutos.
 
 tutorial virtualenv:
+Instalação do Virtualenv
+passo 1. *Instale o virtualenv:* Se você ainda não tem o virtualenv instalado, instale-o usando o pip:
+
+   bash
+   pip install virtualenv
+   
+
+Configuração do Ambiente Virtual passo 2
+1. *Crie um novo ambiente virtual:* Navegue até o diretório do seu projeto e crie um novo ambiente virtual com o comando:
+
+   bash
+   virtualenv venv
+   
+
+   Substitua venv pelo nome que deseja dar ao seu ambiente virtual.
+
+2. *Ative o ambiente virtual:* Para ativar o ambiente virtual, use:
+
+   - No Windows:
+
+     bash
+     venv\Scripts\activate
+     
+
+   - No MacOS/Linux:
+
+     bash
+     source venv/bin/activate
+     
+
+   Você verá o nome do ambiente virtual aparecer no seu prompt de comando.
+
+Instalação de Dependências passo 3
+1. *Instale as dependências do seu projeto:* Com o ambiente virtual ativado, instale as dependências do seu projeto usando o pip:
+
+   bash
+   pip install <pacote1> <pacote2> ...
+   
+
+Uso do Ambiente Virtual
+1. *Execute o seu projeto:* Agora, quando você executar o seu projeto, ele usará as dependências instaladas no ambiente virtual.
+
+Desativação do Ambiente Virtual
+1. *Desativar o ambiente virtual:* Para sair do ambiente virtual, basta digitar:
+
+   bash
+   deactivate
+   
