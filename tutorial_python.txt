@@ -57,4 +57,30 @@ Desativação do Ambiente Virtual
    bash
    deactivate
 
+Tutorial de instalação do flask
+
+passo 1 *Instalar o Flask*: Abra um terminal e use o pip, o gerenciador de pacotes do Python, para instalar o Flask. Execute o seguinte comando:
+
+   bash
+   pip install Flask
+   
+
+passo 2 *Criar um projeto Flask*: Crie um diretório para o seu projeto Flask e navegue até ele. Em seguida, crie um arquivo Python (por exemplo, app.py) e adicione o seguinte código de exemplo:
+
+   python
+   from flask import Flask
+   app = Flask(__name__)
+
+   @app.route('/')
+   def hello_world():
+       return 'Hello, World!'
+
+   if __name__ == '__main__':
+       app.run(debug=True)
+   
+passo 3
+
+Executar o aplicativo*: No terminal, dentro do diretório do seu projeto, execute o comando python app.py. Isso iniciará o servidor de desenvolvimento do Flask.
+
+Acessar o aplicativo*: Abra um navegador web e visite http://localhost:5000/. Você deve ver a mensagem "Hello, World!".
  
