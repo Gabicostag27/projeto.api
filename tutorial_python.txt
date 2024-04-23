@@ -7,6 +7,8 @@ passo 2: Execute o instalador, depois que o download estiver completo, execute o
 passo 3: Clique em "Install Now", clique no botão "Install Now" para iniciar a instalação. Aguarde a instalação, o instalador do Python agora instalará o Python no seu sistema. Isso pode levar alguns minutos.
 
 tutorial virtualenv:
+virtualenv é uma ferramenta em Python que permite criar ambientes virtuais isolados para projetos Python. 
+
 Instalação do Virtualenv
 passo 1. *Instale o virtualenv:* Se você ainda não tem o virtualenv instalado, instale-o usando o pip:
 
@@ -54,4 +56,5 @@ Desativação do Ambiente Virtual
 
    bash
    deactivate
-   
+
+ 
