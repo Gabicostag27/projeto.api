@@ -1,0 +1,24 @@
+ Passo a passo básico para configurar o Git remote para sincronizar com o GitHub:
+
+1. *Crie um repositório no GitHub:*
+   - Vá para o GitHub e clique em "New repository" (Novo repositório).
+   - Dê um nome ao repositório e clique em "Create repository" (Criar repositório).
+
+2. *Inicialize um repositório localmente:*
+   - Abra o terminal e navegue até o diretório do seu projeto.
+   - Inicialize o repositório local com o comando git init.
+
+3. *Adicione o repositório remoto:*
+   - Copie o URL do seu repositório do GitHub.
+   - Adicione o repositório remoto com o comando git remote add origin <URL_do_repositório>.
+
+4. *Verifique a configuração do repositório remoto:*
+   - Você pode verificar se o repositório remoto foi adicionado corretamente usando o comando git remote -v.
+
+5. *Envie seus arquivos para o repositório remoto:*
+   - Adicione os arquivos ao seu commit usando o comando git add . (para adicionar todos os arquivos) ou git add <nome_do_arquivo> (para adicionar arquivos específicos).
+   - Faça um commit com os arquivos adicionados usando o comando git commit -m "Mensagem do commit".
+   - Envie os arquivos para o repositório remoto usando o comando git push origin master (ou main se você estiver usando a branch principal chamada main).
+
+6. *Sincronize seu repositório local com o repositório remoto:*
+   - Para sincronizar seu repositório local com o repositório remoto, você pode usar git pull origin master para trazer as alterações do repositório remoto para o local e git push origin master para enviar suas alterações locais para o repositório remoto.
