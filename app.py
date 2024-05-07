@@ -1,44 +1,14 @@
-from flask import Flask, jsonify, request
+from flask import Flask, jsonify, request, render_template
 
 
 app = Flask(__name__)
 
+@app.route("/")
+def index():
+    return render_template("index.html")
+
 from api import bp
 app.register_blueprint(bp)
 
-@app.route("/", methods=("GET",))
-def index():
-    return jsonify({"status": 200, "message": "API da Gabriela da Costa"})
-
-
-@app.route("/aleatorios", methods=("GET",))
-def aleatorios():
-    import random
-    a = random.randint(49, 100)
-    return jsonify({"status": 200, "data": a})
-
-@app.route("/argumentos/<string:nome>", methods=("GET",))
-def argumentos(nome: str):
-    return jsonify({"status": 200, "data": nome})
-
-@app.route("/argumentos", methods=("GET",))
-def arg_implicito():
-    return jsonify({"status": 200, "data": request.args["nome"]})
-
-@app.route("/idades", methods=("GET",))
-def idades():
-    from random_data import pessoas
-    import funcoes
-    num = funcoes.maior_de_50(pessoas)
-    return jsonify({"status": 200, "data": num})
-
-@app.route("/salario", methods=("GET",))
-def salario():
-    from random_data import pessoas
-    import funcoes
-    num = funcoes.mais_2000(pessoas)
-    return jsonify({"status": 200, "data": num})
-
-
-if __name__ == '__main__':
-    app.run(debug=True)
+if __name__ == "__main__":
+    app.run(host="0.0.0.0")
