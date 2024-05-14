@@ -1,1 +1,0 @@
-O diretório "algoritmos" organiza diferentes algoritmos em temas específicos, facilitando a localização e compreensão de cada um. Cada tema pode conter algoritmos relacionados, como algoritmos de ordenação, busca, grafos, entre outros. Essa organização ajuda a manter os algoritmos bem estruturados e acessíveis para futuras referências e uso em projetos.
